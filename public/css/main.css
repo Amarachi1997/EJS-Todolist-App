@@ -1,14 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
 
+body{
+  background-color: transparent !important;
+  font-family:'Benne', serif !important;
+}
 html {
-  background: rgb(221,214,243);
-  background: linear-gradient(41deg, rgba(221,214,243,1) 0%, rgba(250,172,168,1) 100%);
-  font-family:'Benne', serif;;
+  background: rgb(221,214,243) !important;
+  background: linear-gradient(41deg, rgba(221,214,243,1) 0%, rgba(250,172,168,1) 100%) !important;
   min-height: 100vh;
 }
 
+a.navbar-brand{
+  font-weight: 700;
+}
+
+a.btn.btn-light{
+  margin: 0 10px !important;
+  background-color: #8b3869;
+  color: #fff !important;
+  border: none;
+}
+
 h1 {
-  color: #fff;
+  color: #fff !important;
   padding: 10px;
 }
 
@@ -61,13 +75,17 @@ form {
 
 button {
   
-  border-radius: 50%;
+  border-radius: 50% !important;
   border-color: transparent;
   background-color: #e383bb;
   color: #fff;
   font-size: 30px;
   padding: 10px 18px;
   border-width: 0;
+}
+
+button::after{
+  border: none !important;
 }
 
 input[type="text"] {
